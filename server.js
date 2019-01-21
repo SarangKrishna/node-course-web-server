@@ -57,6 +57,10 @@ app.get('/me',(req,res)=>{
   });
 });
 
+app.get('/projects',(req,res)=>{
+  res.render('projects.hbs',{pageTitle:'Projects..!'});
+});
+
 app.get('/bad',(req,res)=>{
   // res.send('<h1>Unable to get the request..!</h1>');
   res.send({
